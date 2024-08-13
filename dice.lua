@@ -7,7 +7,7 @@ local StartTime = 0
 local StopTime = 0
 local RunningTime = 0
 local NumberOfTurns = 231--231
-local NumberOfRolls = 1000000--1000000000/4 -- can divide by 4 because you don't care witch of the 4 1/4 chanses it is they all have the same 1/4 chanse to occur.
+local NumberOfRolls = 1000000000/4 -- can divide by 4 because you don't care witch of the 4 1/4 chanses it is they all have the same 1/4 chanse to occur.
 
 function write_log(str) -- appends string to a log file
   local location = LogLocation
