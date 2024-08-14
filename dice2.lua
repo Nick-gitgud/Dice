@@ -48,8 +48,11 @@ while Rolls < NumberOfRolls do -- 1000 number of tries
   Rolls = Rolls + 1
   if RunAborted == false then
     TotalMax = math.max(MaxOnes,TotalMax) -- save the higest number if it is higher then the current high number and the set was completed
+    print("Goal hit on run: ",Rolls)
+    break -- Stops if goal is hit
   else
     HighestAbortedRun = math.max(MaxOnes,HighestAbortedRun)
+    RunAborted = false
   end
 end
 
